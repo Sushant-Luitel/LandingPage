@@ -13,7 +13,7 @@ export interface BlogPost{
 
 export const HomeContent:BlogPost[] = [
   {
-    image: "",
+    image: "fedora.png",
     title: "Far far away, behind the word mountains",
     date: "March 16, 2021",
     readingtime: "3 min read",
@@ -26,7 +26,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "tree.jpg",
     title: "Customizing your brand and design settings",
     date: "March 16, 2021",
     readingtime: "3 min read",
@@ -39,7 +39,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "lady holding plants.jpg",
     title: "Writing and managing content in Ghost",
     date: "March 16, 2021",
     readingtime: "5 min read",
@@ -51,7 +51,7 @@ export const HomeContent:BlogPost[] = [
     authorimg: "",
   },
   {
-    image: "",
+    image: "lady leaning on a table.jpg",
     title: "Building your audience with subscriber signups",
     date: "March 16, 2021",
     readingtime: "2 min read",
@@ -64,7 +64,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "green-latte.jpg",
     title: "Selling premium memberships with recurring revenue",
     date: "March 16, 2021",
     readingtime: "1 min read",
@@ -77,7 +77,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "dog.jpg",
     title: "How to grow your business around an audience",
     date: "March 16, 2021",
     readingtime: "2 min read",
@@ -90,7 +90,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "studio.jpg",
     title: "Setting up apps and custom integrations",
     date: "March 16, 2021",
     readingtime: "1 min read",
@@ -102,7 +102,7 @@ export const HomeContent:BlogPost[] = [
     authorimg: "",
   },
   {
-    image: "",
+    image: "woman-painting.jpg",
     title: "The spectacle before us was indeed sublime",
     date: "April 26, 2019",
     readingtime: "1 min read",
@@ -115,7 +115,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "fistbump.jpg",
     title: "What you need to know about Ghost Editor",
     date: "April 26, 2019",
     readingtime: "2 min read",
@@ -127,7 +127,7 @@ export const HomeContent:BlogPost[] = [
     authorimg: "",
   },
   {
-    image: "",
+    image: "A.png",
     title: "Apps and scripts for your Ghost website",
     date: "April 26, 2019",
     readingtime: "1 min read",
@@ -140,7 +140,7 @@ export const HomeContent:BlogPost[] = [
   },
 
   {
-    image: "",
+    image: "girlwithguide.jpg",
     title: "Musical improvisation is the spontaneous music",
     date: "April 26, 2019",
     readingtime: "1 min read",
@@ -155,7 +155,7 @@ export const HomeContent:BlogPost[] = [
 
 
   {
-    image: "",
+    image: "M.png",
     title: "Managing admin settings",
     date: "April 26, 2019",
     readingtime: "2 min read",
