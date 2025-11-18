@@ -19,7 +19,7 @@ export const HomeContent:BlogPost[] = [
     readingtime: "3 min read",
     content:
       "Hey there, welcome to your new home on the web! Unlike social networks, this one is all yours. Publish your work on a custom domain, invite your audience to subscribe, send them new content by email newsletter, and offer premium subscriptions to generate sustainable recurring revenue to fund your work.",
-    type: "member",
+    type: "public",
     tags: ["Travel", "Health"],
     author: "Jonathan Doe",
     authorimg: "",
@@ -32,7 +32,7 @@ export const HomeContent:BlogPost[] = [
     readingtime: "3 min read",
     content:
       "As discussed in the introduction post, one of the best things about Ghost is just how much you can customize to turn your site into something unique...",
-    type: "public",
+    type: "member",
     tags: ["Technology", "Getting Started"],
     author: "Mary Buzard",
     authorimg: "",
