@@ -11,8 +11,8 @@ function NavBar() {
   return (
     <>
       <div className="sticky top-0 bg-black w-full h-[54px] p-2 flex justify-between items-center z-20">
-        <img src="logo.svg" alt="logo" className="w-[114px] h-[14px]" />
-        <button className="px-4.5 text-white bg-[#82B440] text-[14px] font-serif rounded-[4px]">
+        <img src="logo.svg" alt="logo" className="w-[114px] h-3.5" />
+        <button className="px-4.5 text-white bg-[#82B440] text-[14px] font-serif rounded-1">
           Buy now
         </button>
       </div>
@@ -27,25 +27,25 @@ function NavBar() {
           <span className="text-red-700">M</span>aktub<br className="sm:hidden"/> for Ghost
         </div>
 
-        <div className="rounded-full w-[40px] h-[40px] bg-red-600 p-2.5">
+        <div className="rounded-full w-10 h-10 bg-red-600 p-2.5">
           <GoSearch className="w-[17px] h-[17px] text-white" />
         </div>
       </div>
 
       <div className={`fixed top-[54px] left-0 h-full w-[300px] bg-white shadow-2xl transition-transform duration-300  
         ${open ? "translate-x-0" : "-translate-x-full"}`}>
-        <div className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px]">
+        <div className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px]" >
           <Link to="/">Home</Link>
           <Link to="/membership">Membership</Link>
           <Link to="/style-guide">Style Guide</Link>
           <Link to="/tag">#Tag</Link>
           <div className="flex justify-between">
           <Link to="/more">More</Link>
-          <RiArrowDropDownLine className="w-[24px] h-[24px]"/>
+          <RiArrowDropDownLine className="w-6 h-6"/>
           </div>
 
           <div className="text-center">
-            <button className="mt-6 w-[100px] py-[8px] px-[25px] bg-[#4B4870] text-[15px] text-white">
+            <button className="mt-6 w-[100px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white">
               Sign In
             </button>
           </div>

@@ -52,8 +52,8 @@ function Footer() {
           <div className="text-[32px] text-[#4B4870] font-sans font-bold text-center leading-tight ">
             <span className="text-red-700">M</span>aktub for Ghost
           </div>
-          <div className="text-[16px] text-[59172]">
-            Terms & Conditions <span className="mr-[10px] ml-1">|</span> Faqs <span className="mr-[10px] ml-1">|</span> Privacy Policy
+          <div className="text-[16px] text-[59172] text-center">
+            Terms & Conditions <span className="mr-[10px] ml-1">|</span> Faqs <span className="mr-[10px] ml-1">|</span> Privacy<br className="md:hidden"/> Policy
           </div>
           <div className="text-[16px] text-[59172] text-center">Published with Ghost & EstudioPatagon</div>
         </div>
