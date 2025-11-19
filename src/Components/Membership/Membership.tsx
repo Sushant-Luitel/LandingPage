@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { memberShip } from "./MembershipData";
 
-
 function Membership() {
   const [pricingPeriod, setPricingPeriod] = useState("monthly");
-  
 
   return (
     <>
-      <div className="flex flex-col gap-[50px] px-5 items-center">
-        <div className="w-[450px] flex justify-around items-center  py-3 rounded-full  shadow-2xl">
+      <div className="flex flex-col gap-[50px] px-5 items-center mt-6">
+        <div className="w-full max-w-[450px] flex justify-around items-center  py-3 rounded-full  shadow-2xl">
           <button
             onClick={() => setPricingPeriod("monthly")}
-            className={`px-20 py-3 rounded-full text-[20px] ${
-              pricingPeriod === "monthly" ? "bg-red-500 text-white font-semibold" : "bg-transparent text-[#454630]"
+            className={`px-10 py-3 rounded-full text-[20px] ${
+              pricingPeriod === "monthly"
+                ? "bg-red-500 text-white font-semibold"
+                : "bg-transparent text-[#454630]"
             }`}
           >
             Monthly
@@ -21,7 +21,9 @@ function Membership() {
           <button
             onClick={() => setPricingPeriod("yearly")}
             className={`px-20 py-3 rounded-3xl text-[20px] ${
-              pricingPeriod === "yearly" ? "bg-red-500 text-white font-semibold" : "bg-transparent text-[#454630]"
+              pricingPeriod === "yearly"
+                ? "bg-red-500 text-white font-semibold"
+                : "bg-transparent text-[#454630]"
             }`}
           >
             Yearly
@@ -38,9 +40,13 @@ function Membership() {
                 {membership.title}
               </div>
               <div className="text-[55px] font-sans text-red-500 font-bold mb-[15px]">
-                {pricingPeriod === "monthly" ? membership.price : membership.yearlyPrice}
+                {pricingPeriod === "monthly"
+                  ? membership.price
+                  : membership.yearlyPrice}
                 <span className="text-[15px] text-[#454630]  lg:text-[17px]">
-                  {pricingPeriod === "monthly" ? membership.priceSubtext : membership.yearlySubtext}
+                  {pricingPeriod === "monthly"
+                    ? membership.priceSubtext
+                    : membership.yearlySubtext}
                 </span>
               </div>
               <div className="text-center text-[13px] font-sans text-[#454630] mb-[25px] md:text-[14px] md:font-semibold lg:text-[14px]">
@@ -51,14 +57,22 @@ function Membership() {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <button className={`py-2.5 px-[25px] text-[12px] font-semibold  ${index === 0 ? 'bg-red-500' : 'bg-[#4B4870] hover:bg-[#3d3a5c]'} text-white`}>
+              <button
+                className={`py-2.5 px-[25px] text-[12px] font-semibold  ${
+                  index === 0 ? "bg-red-500" : "bg-[#4B4870] hover:bg-[#3d3a5c]"
+                } text-white`}
+              >
                 {membership.button}
               </button>
             </div>
           ))}
         </div>
         <div className="text-[13px]  text-[#596172] md:text-[14px] lg:text-[17px]">
-            Already have an account?<span className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px]"> Sign In</span>
+          Already have an account?
+          <span className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px]">
+            {" "}
+            Sign In
+          </span>
         </div>
       </div>
     </>

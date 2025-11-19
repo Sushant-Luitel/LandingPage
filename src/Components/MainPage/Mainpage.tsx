@@ -1,14 +1,19 @@
 import Footer from "../Footer/Footer";
+import Membership from "../Membership/Membership";
 import NavBar from "../NavBar/NavBar";
-function LandingPage(){
-    return(
-        <>
-        <div>
-            <NavBar />
-            <Footer/>
-        </div>
-        </>
-    );
-};
+import { Routes, Route } from "react-router-dom";
+function LandingPage() {
+  return (
+    <>
+      
+        <NavBar />
+        <Routes>
+        <Route path="/Membership" element={<><Membership /></>} />
+        </Routes>
+        <Footer />
+     
+    </>
+  );
+}
 
-export default LandingPage
+export default LandingPage;

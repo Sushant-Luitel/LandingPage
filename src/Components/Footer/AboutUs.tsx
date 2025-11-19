@@ -13,7 +13,9 @@ function AboutUs() {
           <div className="w-full border-2 border-red-600   h-0 text-center"></div>
         </div>
         <div className="w-full  flex flex-col  gap-4   mb-2.5 ">
-          <div className="flex gap-4 ">            <img
+          <div className="flex gap-4 ">
+            {" "}
+            <img
               src="profile.png"
               alt="profile"
               className="w-[82px] h-[82px]  "

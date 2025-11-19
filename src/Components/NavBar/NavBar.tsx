@@ -2,8 +2,10 @@ import { useState } from "react";
 import { RiMenu2Fill } from "react-icons/ri";
 import { GoSearch } from "react-icons/go";
 import { RxCross2 } from "react-icons/rx";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+
+import SocialMediaIcons from "../Footer/SocialMediaIcons";
+import MenuItems from "./MenuItems";
+import EstudioPatagon from "./EstudioPatagon";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
@@ -17,14 +19,17 @@ function NavBar() {
         </button>
       </div>
 
-      <div className="flex justify-between p-[15px] items-center">
+      <div className="flex justify-between p-[15px] items-center lg:justify-around lg:gap-8">
         <RiMenu2Fill
-          className="w-[31px] h-[31px] text-[#4B4870] cursor-pointer"
+          className="lg:hidden w-[31px] h-[31px] text-[#4B4870] cursor-pointer"
           onClick={() => setOpen(true)}
         />
-
-        <div className="text-[40px] text-[#4B4870] font-sans font-bold text-center leading-tight ">
-          <span className="text-red-700">M</span>aktub<br className="sm:hidden"/> for Ghost
+        <div className="hidden lg:block">
+          <SocialMediaIcons />
+        </div>
+        <div className="text-[40px] text-[#4B4870] font-sans font-bold text-center leading-tight md:text-[50px]">
+          <span className="text-red-700">M</span>aktub
+          <br className="sm:hidden" /> for Ghost
         </div>
 
         <div className="rounded-full w-10 h-10 bg-red-600 p-2.5">
@@ -32,23 +37,12 @@ function NavBar() {
         </div>
       </div>
 
-      <div className={`fixed top-[54px] left-0 h-full w-[300px] bg-white shadow-2xl transition-transform duration-300  
-        ${open ? "translate-x-0" : "-translate-x-full"}`}>
-        <div className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px]" >
-          <Link to="/">Home</Link>
-          <Link to="/membership">Membership</Link>
-          <Link to="/style-guide">Style Guide</Link>
-          <Link to="/tag">#Tag</Link>
-          <div className="flex justify-between">
-          <Link to="/more">More</Link>
-          <RiArrowDropDownLine className="w-6 h-6"/>
-          </div>
-
-          <div className="text-center">
-            <button className="mt-6 w-[100px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white">
-              Sign In
-            </button>
-          </div>
+      <div
+        className={`fixed top-[54px] left-0 h-full w-[300px] bg-white shadow-2xl transition-transform duration-300  
+        ${open ? "translate-x-0" : "-translate-x-full"} `}
+      >
+        <div className="lg:hidden">
+          <MenuItems />
         </div>
       </div>
 
@@ -60,6 +54,12 @@ function NavBar() {
           <RxCross2 className="text-[32px]" />
         </button>
       )}
+
+      <div className="hidden lg:block">
+        <MenuItems />
+      </div>
+
+      <EstudioPatagon />
     </>
   );
 }
