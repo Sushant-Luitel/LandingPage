@@ -50,10 +50,10 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
           <img
             src={post.image}
             alt={post.title}
-            className="w-25 h-25 flex-shrink-0  object-cover md:w-[114px] md:h-[114px]"
+            className="w-25 h-25 flex-shrink-0  object-cover md:w-[114px] md:h-[114px] lg:h-[150px] lg:w-[150px] xl:w-[250px] xl:h-[250px] "
           ></img>
           <div className="flex justify-center items-center flex-col flex-grow md:ml-2 md:pt-5 ">
-            <h2 className=" flex justify-center items-center text-base font-bold font-josefin md:text-xl flex flex-row justify-start text-left md:pb-2 lg:text-3xl xl:text-4xl">
+            <h2 className=" flex justify-start items-center text-base font-bold font-josefin md:text-xl flex flex-row justify-start text-left md:pb-2 lg:text-3xl justify-start xl:text-4xl justify-start">
               {post.title}
             </h2>
             <div className=" items-center justify-center mb-4 mt-4 items-baseline hidden md:flex">
@@ -89,7 +89,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
             </div>
             <div className="flex ml-2 ">{renderTypeIcon(post.type)}</div>
           </div>
-          <p className="text-gray-600 leading-relaxed mb-6 font-source-serif text-left text-[13px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+          <p className="text-gray-600 leading-relaxed mb-6 font-source-serif text-left text-[13px] md:text-lg md:mt-5 lg:text-xl xl:text-2xl 2xl:text-3xl">
             {post.content.substring(0, 200)}...
           </p>
         </div>
