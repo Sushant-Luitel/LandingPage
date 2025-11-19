@@ -1,10 +1,33 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import LandingPage from "./Components/MainPage/Mainpage";
+import NavBar from "./components/NavBar/NavBar";
+import { Home } from "./pages/home";
+import Membership from "./components/Membership/membership-page";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/Membership"
+          element={
+            <>
+              <Membership />
+            </>
+          }
+        />
+      </Routes>
+      <Footer />
     </>
   );
 }
