@@ -20,7 +20,7 @@ function Membership() {
           </button>
           <button
             onClick={() => setPricingPeriod("yearly")}
-            className={`px-20 py-3 rounded-3xl text-[20px] ${
+            className={`px-10 py-3 rounded-3xl text-[20px] ${
               pricingPeriod === "yearly"
                 ? "bg-red-500 text-white font-semibold"
                 : "bg-transparent text-[#454630]"

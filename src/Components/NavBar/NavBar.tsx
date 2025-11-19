@@ -27,7 +27,7 @@ function NavBar() {
         <div className="hidden lg:block">
           <SocialMediaIcons />
         </div>
-        <div className="text-[40px] text-[#4B4870] font-sans font-bold text-center leading-tight md:text-[50px]">
+        <div className="text-[40px] text-[#4B4870] font-sans font-bold text-center leading-tight md:text-[50px] transition-transform duration-300  hover:scale-112">
           <span className="text-red-700">M</span>aktub
           <br className="sm:hidden" /> for Ghost
         </div>

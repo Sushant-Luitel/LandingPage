@@ -34,7 +34,7 @@ function Footer() {
         </div>
 
         <div className="mt-5 flex flex-col gap-5">
-          <div className="text-[32px] text-[#4B4870] font-sans font-bold text-center leading-tight ">
+          <div className="text-[32px] text-[#4B4870] font-sans font-bold text-center leading-tight transition-transform duration-300  hover:scale-112 ">
             <span className="text-red-700">M</span>aktub for Ghost
           </div>
           <div className="text-[16px] text-[59172] text-center hover:text-red-500">
