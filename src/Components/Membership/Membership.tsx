@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { memberShip } from "./MembershipData";
+import { memberShip } from "../Constants/MembershipData";
 
 function Membership() {
   const [pricingPeriod, setPricingPeriod] = useState("monthly");
