@@ -1,12 +1,14 @@
 
 import './App.css'
-import Membership from './Components/Membership/Membership'
+import { Home } from './components/Home/Home'
+import Membership from './components/Membership/Membership'
 
 function App() {
 
   return (
     <>
-      <Membership />
+    <Home />
+    <Membership />
     </>
   )
 }
