@@ -1,6 +1,7 @@
-import { HomeContent } from "./constants/HomeContent";
-import { PostCard } from "./PostCard";
+
 import { useState } from "react";
+import { PostCard } from "../components/Home/PostCard";
+import { HomeContent } from "../components/Home/constants/HomeContent";
 export const Home = () => {
   const page_size = 6;
   const [page, setPage] = useState(0);
