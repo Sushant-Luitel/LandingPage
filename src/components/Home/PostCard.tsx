@@ -13,7 +13,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
       case "paid":
         return <RiVipLine className="text-red-500 w-4 h-4" title="Paid" />;
       default:
-        return null; // public or unknown
+        return null;
     }
   };
 
