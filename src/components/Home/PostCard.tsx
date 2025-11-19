@@ -1,4 +1,4 @@
-import type { BlogPost } from "./HomeContent";
+import type { BlogPost } from "./constants/HomeContent";
 import { FaRegComment } from "react-icons/fa";
 import { CiLock } from "react-icons/ci";
 import { RiVipLine } from "react-icons/ri";

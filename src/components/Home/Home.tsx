@@ -1,4 +1,4 @@
-import { HomeContent } from "./HomeContent";
+import { HomeContent } from "./constants/HomeContent";
 import { PostCard } from "./PostCard";
 import { useState } from "react";
 export const Home = () => {
