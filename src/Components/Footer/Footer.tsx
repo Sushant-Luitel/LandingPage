@@ -1,8 +1,8 @@
 import LatestArticle from "./LatestArticle";
-import TopCloud from "./TopCloud";
 import FollowMe from "./FollowMe";
 import AboutUs from "./AboutUs";
 import SocialMediaIcons from "./SocialMediaIcons";
+import TagCloud from "./TagCloud";
 function Footer() {
   return (
     <>
@@ -20,15 +20,18 @@ function Footer() {
             <div className="w-full bg-[#F9F9FE] px-[25px] py-3 shadow-md text-center text-[16px] text-[#596172] md:w-[260px]">
               Enter your email address
             </div>
-            <button className="w-[94.98px] py-2 px-[25px] bg-[#4B4870] text-white">
-              Submit
-            </button>
+            <div className="relative inline-block group">
+              <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a]"></span>
+              <button className="relative bg-[#47446a] text-white px-8 py-3 text-lg transition-all duration-300 hover:-top-1.5 hover:-left-1.5">
+                Submit
+              </button>
+            </div>
           </div>
           <SocialMediaIcons />
         </div>
         <div className="w-full flex flex-col gap-10 mt-[45px] md:grid md:grid-cols-2 md:grid-rows-2 md:gap-10 xl-grid xl:grid-cols-4 xl:grid-rows-1 xl:max-w-[1440px] ">
           <LatestArticle />
-          <TopCloud />
+          <TagCloud />
           <FollowMe />
           <AboutUs />
         </div>
@@ -37,10 +40,13 @@ function Footer() {
           <div className="text-[32px] text-[#4B4870] font-sans font-bold text-center leading-tight transition-transform duration-300  hover:scale-112 ">
             <span className="text-red-700">M</span>aktub for Ghost
           </div>
-          <div className="text-[16px] text-[59172] text-center hover:text-red-500">
-            Terms & Conditions <span className="mr-2.5 ml-1">|</span> Faqs
-            <span className="mr-2.5 ml-1">|</span> Privacy
-            <br className="md:hidden" /> Policy
+          <div className="text-[16px] text-[59172] text-center ">
+           <span className="hover:text-red-500">Terms & Conditions </span> 
+           <span className="mr-2.5 ml-1">|</span> 
+           <span className="hover:text-red-500">Faqs</span>
+            <span className="mr-2.5 ml-1">|</span>
+            <span className="hover:text-red-500"> Privacy
+            <br className="md:hidden" /> Policy</span>
           </div>
           <div className="text-[16px] text-[59172] text-center">
             Published with Ghost & EstudioPatagon

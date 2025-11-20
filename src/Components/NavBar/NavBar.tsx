@@ -19,21 +19,21 @@ function NavBar() {
         </button>
       </div>
 
-      <div className="flex justify-between p-[15px] items-center lg:justify-around lg:gap-8">
+      <div className="flex justify-between p-[15px] mt-3 items-center lg:justify-evenly lg:gap-8">
         <RiMenu2Fill
           className="lg:hidden w-[31px] h-[31px] text-[#4B4870] cursor-pointer"
           onClick={() => setOpen(true)}
         />
-        <div className="hidden lg:block">
+        <div className="hidden lg:block ">
           <SocialMediaIcons />
         </div>
-        <div className="text-[40px] text-[#4B4870] font-sans font-bold text-center leading-tight md:text-[50px] transition-transform duration-300  hover:scale-112">
+        <div className="text-[40px] text-[#4B4870] font-josefin font-bold text-center leading-tight md:text-[50px] transition-transform duration-300  hover:scale-112">
           <span className="text-red-700">M</span>aktub
           <br className="sm:hidden" /> for Ghost
         </div>
 
-        <div className="rounded-full w-10 h-10 bg-red-600 p-2.5">
-          <GoSearch className="w-[17px] h-[17px] text-white" />
+        <div className="rounded-full w-10 h-10 bg-red-600 p-2.5 xl:w-11 xl:h-11 cursor-pointer flex justify-center items-center ">
+          <GoSearch className="w-[17px] h-[17px] text-white " />
         </div>
       </div>
 
@@ -41,7 +41,7 @@ function NavBar() {
         className={`fixed top-[54px] left-0 h-full w-[300px] bg-white shadow-2xl transition-transform duration-300  
         ${open ? "translate-x-0" : "-translate-x-full"} `}
       >
-        <div className="lg:hidden">
+        <div className="lg:hidden  ">
           <MenuItems />
         </div>
       </div>
@@ -55,7 +55,7 @@ function NavBar() {
         </button>
       )}
 
-      <div className="hidden lg:block">
+      <div className="hidden lg:flex  justify-center items-center">
         <MenuItems />
       </div>
 
