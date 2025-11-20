@@ -5,6 +5,7 @@ import { Home } from "./pages/home";
 import Membership from "./pages/membership-page";
 import Footer from "./components/Footer/Footer";
 import SignInPage from "./pages/signin-page";
+import Search from "./components/NavBar/SearchButton";
 
 function App() {
   return (
@@ -37,6 +38,14 @@ function App() {
           element={
             <>
               <SignInPage />
+            </>
+          }
+        />
+        <Route
+          path="/search"
+          element={
+            <>
+              <Search />
             </>
           }
         />

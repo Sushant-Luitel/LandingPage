@@ -2,13 +2,15 @@ import { useState } from "react";
 import { RiMenu2Fill } from "react-icons/ri";
 import { GoSearch } from "react-icons/go";
 import { RxCross2 } from "react-icons/rx";
-
 import SocialMediaIcons from "../Footer/SocialMediaIcons";
 import MenuItems from "./MenuItems";
 import EstudioPatagon from "./EstudioPatagon";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    window.location.href = "/search";
+  }
 
   return (
     <>
@@ -32,7 +34,7 @@ function NavBar() {
           <br className="sm:hidden" /> for Ghost
         </div>
 
-        <div className="rounded-full w-10 h-10 bg-red-600 p-2.5 xl:w-11 xl:h-11 cursor-pointer flex justify-center items-center ">
+        <div onClick={handleClick} className="rounded-full w-10 h-10 bg-red-600 p-2.5 xl:w-11 xl:h-11 cursor-pointer flex justify-center items-center ">
           <GoSearch className="w-[17px] h-[17px] text-white " />
         </div>
       </div>
