@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { PostCard } from "../components/Home/PostCard";
-import { HomeContent } from "../components/Home/constants/HomeContent";
-import TopCloud from "../components/Footer/TopCloud";
+import { HomeContent } from "../constants/HomeContent";
+import TopCloud from "../components/Footer/TagCloud";
 import FollowMe from "../components/Footer/FollowMe";
 import { FaChevronUp } from "react-icons/fa";
 
