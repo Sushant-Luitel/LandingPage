@@ -79,7 +79,7 @@ export const Home = () => {
         <div>
           <div className="flex flex-col w-full">
             <div className="w-full flex gap-3.5 mb-[30px] items-center">
-              <div className="w-full max-w-[110px] text-[20px] font-josefin">
+              <div className="w-full max-w-[110px] text-[20px] font-bold font-josefin">
                 Advertising
               </div>
               <div className="w-full border-2 border-red-600   h-0 text-center"></div>
