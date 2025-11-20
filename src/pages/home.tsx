@@ -84,7 +84,7 @@ export const Home = () => {
               </div>
               <div className="w-full border-2 border-red-600   h-0 text-center"></div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center hover:cursor-pointer">
               <img
                 src="Advertising-banner.png"
                 className="w-full max-w-[384px] p-3"
