@@ -136,7 +136,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
         <div className="mt-auto absolute bottom-[-20px] left-1/2 transform -translate-x-1/2">
           <div className="relative inline-block group">
               <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a]"></span>
-              <button className="relative bg-[#47446a] text-white px-8 py-3 text-lg transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2">
+              <button className="relative bg-[#47446a] w-max text-white px-8 py-3 text-sm md:text-lg transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2">
                 Continue Reading
               </button>
             </div>
