@@ -3,17 +3,7 @@
   box-sizing: border-box;
   
 }
-.underline-animate {
-  background-image: linear-gradient(to right, #65ebe7 0%, #65ebe7 100%);
-  background-size: 0% 7px; /* start hidden */
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  transition: background-size 400ms ease;
-}
 
-.underline-animate:hover {
-  background-size: 100% 3px; /* reveal underline */
-}
 
 /* Define a reusable Source Serif stack */
 :root {

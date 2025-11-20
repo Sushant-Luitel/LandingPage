@@ -49,20 +49,19 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <div className="bg-white rounded-md w-full sm:rounded-sm shadow-lg flex flex-col p-4  relative h-full mt-5 md:p-[40px] md:mt-[70px]">
         <div className="flex items-center justify-start gap-4  md:items-start">
           <div className="w-25 h-25 md:w-[120px] md:h-[114px] relative">
-            {/* <div className="absolute h-full w-full outline-4 -outline-offset-4"></div> */}
             <img
-            src={post.image}
-            alt={post.title}
-            className="h-full w-full flex-shrink-0  object-cover  hover:cursor-pointer"
-          ></img>
-          <div className="absolute top-1/2 left-1/2 z-2 -translate-1/2 h-[95%] w-[95%] bg-white"></div>
-          <div className="absolute top-1/2 left-1/2 z-3 -translate-1/2 h-[95%] w-[95%]">
-            <img
-            src={post.image}
-            alt={post.title}
-            className="h-full w-full z-1 flex-shrink-0  object-cover  hover:cursor-pointer hover:-translate-x-1.5 hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
-          ></img>
-          </div>
+              src={post.image}
+              alt={post.title}
+              className="h-full w-full flex-shrink-0  object-cover  hover:cursor-pointer"
+            ></img>
+            <div className="absolute top-1/2 left-1/2 z-2 -translate-1/2 h-[95%] w-[95%] bg-white"></div>
+            <div className="absolute top-1/2 left-1/2 z-3 -translate-1/2 h-[95%] w-[95%]">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="h-full w-full z-1 flex-shrink-0  object-cover  hover:cursor-pointer hover:-translate-x-1.5 hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+              ></img>
+            </div>
           </div>
           <div className="flex justify-start items-start flex-col flex-grow md:ml-2 md:p-2">
             <h2 className=" inline justify-start items-center text-base font-bold font-josefin md:text-2xl justify-start text-left md:pb-2 hover:cursor-pointer hover:underline decoration-blue-500 decoration-3 underline-offset-6 underline-eaese-in-out duration-900">
@@ -135,11 +134,11 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
         </div>
         <div className="mt-auto absolute bottom-[-20px] left-1/2 transform -translate-x-1/2">
           <div className="relative inline-block group">
-              <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a]"></span>
-              <button className="relative bg-[#47446a] w-max text-white px-8 py-3 text-sm md:text-lg transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2">
-                Continue Reading
-              </button>
-            </div>
+            <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a]"></span>
+            <button className="relative bg-[#47446a] w-max text-white px-8 py-3 text-sm md:text-lg transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2">
+              Continue Reading
+            </button>
+          </div>
         </div>
       </div>
     </div>
