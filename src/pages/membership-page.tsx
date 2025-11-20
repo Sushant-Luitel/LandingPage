@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { memberShip } from "../constants/MembershipData";
+import { useNavigate } from "react-router-dom";
 
 function Membership() {
   const [pricingPeriod, setPricingPeriod] = useState("monthly");
+  const navigate = useNavigate();
   const handleClick = () => {
-    window.location.href = "/signin-page";
+    navigate('/signin-page');
   } 
   return (
     <>

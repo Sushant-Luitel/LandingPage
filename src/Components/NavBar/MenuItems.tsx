@@ -1,9 +1,11 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { menuItems } from "./MenuItemsData";
+import { useNavigate } from "react-router-dom";
 function MenuItems() {
+  const navigate = useNavigate();
   const handleClick = () => {
-    window.location.href = '/signin-page';
+    navigate('/signin-page');
   }
   return (
     <>

@@ -5,11 +5,12 @@ import { RxCross2 } from "react-icons/rx";
 import SocialMediaIcons from "../Footer/SocialMediaIcons";
 import MenuItems from "./MenuItems";
 import EstudioPatagon from "./EstudioPatagon";
-
+import { useNavigate } from "react-router-dom";
 function NavBar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const handleClick = () => {
-    window.location.href = "/search";
+    navigate('/search');
   }
 
   return (

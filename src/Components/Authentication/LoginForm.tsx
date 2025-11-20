@@ -1,10 +1,12 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 type FormValues = {
   name: string;
   password: string;
 };
 function LoginComponent() {
   const form = useForm<FormValues>();
+  const navigate=useNavigate()
   const { register, formState, handleSubmit, reset } = form;
 
   const onsubmit = (data: FormValues) => {
@@ -13,7 +15,7 @@ function LoginComponent() {
   };
   const { errors } = formState;
   const handleClick = () => {
-    window.location.href = "/signup";
+    navigate('/signup');
   };
   return (
     <>
