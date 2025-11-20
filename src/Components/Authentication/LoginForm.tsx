@@ -13,7 +13,7 @@ function LoginComponent() {
   };
   const { errors } = formState;
   const handleClick = () => {
-    window.location.href = "/signup-page";
+    window.location.href = "/signup";
   };
   return (
     <>
