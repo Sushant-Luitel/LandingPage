@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { PostCard } from "../components/Home/PostCard";
-import { HomeContent } from "../components/Home/constants/HomeContent";
+import { HomeContent } from "../constants/HomeContent";
 export const Home = () => {
   const page_size = 6;
   const [page, setPage] = useState(0);

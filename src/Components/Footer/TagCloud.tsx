@@ -1,11 +1,11 @@
 import { FaHashtag } from "react-icons/fa";
-function TopCloud() {
+function TagCloud() {
   return (
     <>
       <div>
         <div className="w-full flex flex-col ">
           <div className="w-full flex gap-3.5 mb-[30px] items-center">
-            <div className="w-full max-w-[110px] text-[20px] font-sans">
+            <div className="w-full max-w-[110px] text-[20px] font-josefin font-bold text-[#454630]">
               Top Cloud
             </div>
             <div className="w-full border-2 border-red-600   h-0 text-center"></div>
@@ -49,4 +49,4 @@ function TopCloud() {
   );
 }
 
-export default TopCloud;
+export default TagCloud;

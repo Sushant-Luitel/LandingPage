@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { memberShip } from "../components/Membership/MembershipData";
+import { memberShip } from "../constants/MembershipData";
 
 function Membership() {
   const [pricingPeriod, setPricingPeriod] = useState("monthly");
@@ -7,7 +7,7 @@ function Membership() {
   return (
     <>
       <div className="flex flex-col gap-[50px] px-5 items-center mt-6">
-        <div className="w-full max-w-[450px] flex justify-around items-center  py-3 rounded-full  shadow-2xl">
+        <div className="w-full max-w-[450px] flex justify-around items-center  py-3 rounded-full  shadow-sm">
           <button
             onClick={() => setPricingPeriod("monthly")}
             className={`px-10 py-3 rounded-full text-[20px] ${

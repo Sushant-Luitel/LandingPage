@@ -6,11 +6,11 @@ function MenuItems() {
     <>
       <div
         className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px] 
-       lg:flex-row lg:gap-5 lg:items-center lg:shadow-2xl lg:max-w-[582px] lg:p-0 
-       lg:py-2.5  lg:font-semibold lg:justify-center lg:ml-auto lg:mr-auto"
+       lg:flex-row lg:gap-5  lg:items-center lg:shadow-sm lg:max-w-[582px] lg:p-0 
+       lg:py-2.5  lg:font-semibold lg:justify-center "
       >
         {menuItems.map((item) => (
-          <div className="flex items-center gap-1" key={item.name}>
+          <div className="flex items-center font-josefin gap-1" key={item.name}>
             <Link to={item.path} className="hover:text-red-500">
               {item.name}
             </Link>
@@ -19,7 +19,7 @@ function MenuItems() {
           </div>
         ))}
         <div className="text-center">
-          <button className="mt-6 w-[100px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white lg:mt-0 ">
+          <button className="mt-6 w-[100px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white font-josefin lg:mt-0 ">
             Sign In
           </button>
         </div>
