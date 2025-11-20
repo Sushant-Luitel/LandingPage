@@ -3,7 +3,9 @@ import { memberShip } from "../constants/MembershipData";
 
 function Membership() {
   const [pricingPeriod, setPricingPeriod] = useState("monthly");
-
+  const handleClick = () => {
+    window.location.href = "/signin-page";
+  } 
   return (
     <>
       <div className="flex flex-col gap-[50px] px-5 items-center mt-6">
@@ -69,8 +71,7 @@ function Membership() {
         </div>
         <div className="text-[13px]  text-[#596172] md:text-[14px] lg:text-[17px]">
           Already have an account?
-          <span className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px]">
-            {" "}
+          <span className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px]" onClick={handleClick}>
             Sign In
           </span>
         </div>

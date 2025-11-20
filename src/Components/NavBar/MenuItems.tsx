@@ -2,10 +2,13 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { menuItems } from "./MenuItemsData";
 function MenuItems() {
+  const handleClick = () => {
+    window.location.href = '/signin-page';
+  }
   return (
     <>
       <div
-        className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px] 
+        className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px] font-bold
        lg:flex-row lg:gap-5  lg:items-center lg:shadow-sm lg:max-w-[582px] lg:p-0 
        lg:py-2.5  lg:font-semibold lg:justify-center "
       >
@@ -19,7 +22,9 @@ function MenuItems() {
           </div>
         ))}
         <div className="text-center">
-          <button className="mt-6 w-[100px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white font-josefin lg:mt-0 ">
+          <button className="mt-6 w-[120px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white font-josefin lg:mt-0 "
+                  onClick={handleClick}
+          >
             Sign In
           </button>
         </div>

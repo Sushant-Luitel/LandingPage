@@ -4,17 +4,20 @@ import NavBar from "./components/NavBar/NavBar";
 import { Home } from "./pages/home";
 import Membership from "./pages/membership-page";
 import Footer from "./components/Footer/Footer";
+import SignInPage from "./pages/signin-page";
 
 function App() {
   return (
     <>
-      <NavBar />
+      
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Home />
+            <NavBar />
+            <Home />
+            <Footer />
             </>
           }
         />
@@ -22,12 +25,23 @@ function App() {
           path="/Membership"
           element={
             <>
-              <Membership />
+            <NavBar />
+            <Membership />
+            <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/signin-page"
+          element={
+            <>
+              <SignInPage />
             </>
           }
         />
       </Routes>
-      <Footer />
+      
     </>
   );
 }
