@@ -1,26 +1,20 @@
 import { useForm } from "react-hook-form";
-
-type FormValues = {
-  name: string;
-  email: string;
-  phone: string;
-  password: string;
-  confirmpassword: string;
-};
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { SignupSchema } from "./Signup.zod";
+type FormValues = z.infer<typeof SignupSchema>;
 
 export const Signup = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors, isSubmitting },
-  } = useForm<FormValues>();
+  } = useForm<FormValues>({ resolver: zodResolver(SignupSchema) });
 
   const onSubmit = async (data: FormValues) => {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     alert("Hello, "+JSON.stringify(data.name)+"! You have successfully signed up.");
   };
-    const password = watch("password", "");
 
   return (
     <div className="pt-3 p-1 md:pt-[50px] md:p-10 max-w-7xl w-full flex justify-center items-center">
@@ -41,21 +35,7 @@ export const Signup = () => {
         >
           <div className="gap-5 flex flex-col mt-6 md:mt-10 lg:w-full justify-center items-center font-source-serif md:flex-col">
             <input
-              {...register("name", {
-                required: "Name is required",
-                minLength: {
-                  value: 3,
-                  message: "Name must be at least 3 characters long",
-                },
-                maxLength: {
-                  value: 30,
-                  message: "Name cannot exceed 30 characters",
-                },
-                pattern: {
-                  value: /^[A-Za-z\s]+$/i,
-                  message: "Name can only contain letters and spaces",
-                },
-              })}
+              {...register("name")}
               className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
               placeholder="Enter your name"
             />
@@ -64,16 +44,11 @@ export const Signup = () => {
             )}
 
             <input
-              {...register("email", {
-                required: "Email is required",
-                pattern: {
-                  value: /^[^\s]+@[^\s]+\.[^\s]+$/,
-                  message: "Invalid email address",
-                },
-              })}
+              {...register("email")}
               className="shadow-lg px-5 py-2 w-full lg:max-w-xl focus:outline-none"
               placeholder="Enter your email"
             />
+        
             {errors.email && (
               <span className="text-red-500">{errors.email.message}</span>
             )}
@@ -82,22 +57,7 @@ export const Signup = () => {
               type="number"
               className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
               placeholder="Phone No:"
-              {...register("phone", {
-                required: "Phone number is required",
-
-                pattern: {
-                  value: /^[0-9]+$/,
-                  message: "Phone number can only contain digits",
-                },
-                minLength: {
-                  value: 10,
-                  message: "Phone number must be at least 10 digits",
-                },
-                maxLength: {
-                  value: 15,
-                  message: "Phone number cannot exceed 15 digits",
-                },
-              })}
+              {...register("phone")}
             />
             {errors.phone && (
               <span className="text-red-500">{errors.phone.message}</span>
@@ -107,13 +67,7 @@ export const Signup = () => {
               type="password"
               placeholder="Password:"
               className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
-              {...register("password", {
-                required: "Password is required",
-                minLength: {
-                  value: 6,
-                  message: "Password must be at least 6 characters long",
-                },
-              })}
+              {...register("password")}
             />
             {errors.password && (
               <span className="text-red-500">
@@ -125,15 +79,7 @@ export const Signup = () => {
               type="password"
               placeholder="Confirm Password:"
               className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
-              {...register("confirmpassword", {
-                required: "Password confirmation is required",
-                minLength: {
-                  value: 6,
-                  message: "Password must be at least 6 characters long",
-                },
-                validate: (value) =>
-                  value === password || "Passwords do not match",
-              })}
+              {...register("confirmpassword")}
             />
             {errors.confirmpassword && (
               <span className="text-red-500">
