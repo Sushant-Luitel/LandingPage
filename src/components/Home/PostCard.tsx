@@ -114,9 +114,10 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
             <img
               src={post.authorimg || "https://i.pravatar.cc/150?img=68"}
               alt={post.author}
-              className="w-12 h-12 rounded-full object-cover border border-gray-200 md:w-8 md:h-8"
+              title={post.author}
+              className="w-12 h-12 rounded-full object-cover border border-gray-200 md:w-8 md:h-8 hover:"
             />
-            <span className="text-sm font-medium md:text-md text-gray-700 mr-3">
+            <span className="text-sm font-medium md:text-md text-gray-700 mr-3 hover:text-red-500">
               {post.author}
             </span>
           </div>
