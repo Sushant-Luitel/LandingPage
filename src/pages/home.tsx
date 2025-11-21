@@ -2,7 +2,6 @@ import { useSearchParams } from "react-router-dom";
 import { PostCard } from "../components/Home/PostCard";
 import { HomeContent } from "../constants/HomeContent";
 import { Sidebar } from "../components/Sidebar/Sidebar";
-import { scrollToTop } from "../lib/scrollToTop";
 export const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const page_size = 6;
@@ -30,7 +29,6 @@ export const Home = () => {
             <button
               onClick={() => {
                 goToPage(page - 1);
-                scrollToTop();
               }}
               className="px-3 py-2 rounded border bg-red-500 text-white w-20"
             >
@@ -46,7 +44,6 @@ export const Home = () => {
             <button
               onClick={() => {
                 goToPage(page + 1);
-                scrollToTop();
               }}
               className="px-3 py-2 rounded bg-red-500 text-white border w-20"
             >
