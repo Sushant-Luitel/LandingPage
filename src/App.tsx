@@ -6,10 +6,12 @@ import SignInPage from "./pages/signin-page";
 import Search from "./components/NavBar/SearchButton";
 import { Signup } from "./components/Authentication/Signup";
 import Layout from "./components/Outlet/Outlet";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -21,10 +23,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
 
         <Route path="/search" element={<Search />} />
-        <Route path="*" element={<div className="text-[20px] text-center">404 Not Found</div>} />
-
-        
-
+        <Route
+          path="*"
+          element={<div className="text-[20px] text-center">404 Not Found</div>}
+        />
       </Routes>
     </>
   );
