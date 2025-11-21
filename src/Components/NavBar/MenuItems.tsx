@@ -1,12 +1,17 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { menuItems } from "./MenuItemsData";
+import { useNavigate } from "react-router-dom";
 function MenuItems() {
+  const navigate = useNavigate();
+  const navigateToSignInPage = () => {
+    navigate('/signin-page');
+  }
   return (
     <>
       <div
-        className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px] 
-       lg:flex-row lg:gap-5  lg:items-center lg:shadow-sm lg:max-w-[582px] lg:p-0 
+        className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px] font-bold
+       lg:flex-row lg:gap-5  lg:items-center lg:shadow-sm lg:max-w-[582px] lg:p-0 lg:px-3.5
        lg:py-2.5  lg:font-semibold lg:justify-center "
       >
         {menuItems.map((item) => (
@@ -19,7 +24,9 @@ function MenuItems() {
           </div>
         ))}
         <div className="text-center">
-          <button className="mt-6 w-[100px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white font-josefin lg:mt-0 ">
+          <button className="mt-6 w-[120px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white font-josefin lg:mt-0 "
+                  onClick={navigateToSignInPage}
+          >
             Sign In
           </button>
         </div>

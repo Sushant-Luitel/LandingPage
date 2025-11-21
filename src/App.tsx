@@ -1,33 +1,31 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
 import { Home } from "./pages/home";
 import Membership from "./pages/membership-page";
-import Footer from "./components/Footer/Footer";
+import SignInPage from "./pages/signin-page";
+import Search from "./components/NavBar/SearchButton";
+import { Signup } from "./components/Authentication/Signup";
+import Layout from "./components/Outlet/Outlet";
 
 function App() {
   return (
     <>
-      <NavBar />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-            </>
-          }
-        />
-        <Route
-          path="/Membership"
-          element={
-            <>
-              <Membership />
-            </>
-          }
-        />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/Membership" element={<Membership />} />
+        </Route>
+
+        <Route path="/signin-page" element={<SignInPage />} />
+
+        <Route path="/signup" element={<Signup />} />
+
+        <Route path="/search" element={<Search />} />
+        <Route path="*" element={<div className="text-[20px] text-center">404 Not Found</div>} />
+
+        
+
       </Routes>
-      <Footer />
     </>
   );
 }
