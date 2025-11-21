@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 export const Sidebar = () => {
   const sidebarRef = useRef<HTMLDivElement | null>(null);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const el = sidebarRef.current;
