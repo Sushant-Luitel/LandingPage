@@ -21,7 +21,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
 
         <Route path="/search" element={<Search />} />
-        <Route path="*" element={<div>404 Not Found</div>} />
+        <Route path="*" element={<div className="text-[20px] text-center">404 Not Found</div>} />
 
         
 
