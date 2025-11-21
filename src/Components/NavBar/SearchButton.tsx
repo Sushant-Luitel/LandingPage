@@ -4,9 +4,9 @@ import { RxCross2 } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 
 function Search() {
-  const navigate = useNavigate();
+  const navigateToHomePage = useNavigate();
   const handleClick = () => {
-    navigate("/");
+    navigateToHomePage("/");
   }
   return (
     <div className=" ">

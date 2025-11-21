@@ -8,9 +8,9 @@ import EstudioPatagon from "./EstudioPatagon";
 import { useNavigate } from "react-router-dom";
 function NavBar() {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
+  const navigateToSearchPage = useNavigate();
   const handleClick = () => {
-    navigate('/search');
+    navigateToSearchPage('/search');
   }
 
   return (

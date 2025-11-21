@@ -8,7 +8,7 @@ type FormValues = z.infer<typeof LoginFormSchema>;
 
 function LoginComponent() {
   const form = useForm<FormValues>({ resolver: zodResolver(LoginFormSchema) });
-  const navigate = useNavigate();
+  const navigateToSignInPage = useNavigate();
   const { register, formState, handleSubmit, reset } = form;
 
   const onsubmit = (data: FormValues) => {
@@ -17,7 +17,7 @@ function LoginComponent() {
   };
   const { errors } = formState;
   const handleClick = () => {
-    navigate("/signup");
+    navigateToSignInPage("/signup");
   };
 
   return (

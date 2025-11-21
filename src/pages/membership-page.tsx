@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 function Membership() {
   const [pricingPeriod, setPricingPeriod] = useState("monthly");
-  const navigate = useNavigate();
+  const navigateToSignInPage = useNavigate();
   const handleClick = () => {
-    navigate('/signin-page');
+    navigateToSignInPage('/signin-page');
   } 
   return (
     <>

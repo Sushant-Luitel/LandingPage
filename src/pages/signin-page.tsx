@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 import LoginHeader from "../components/Authentication/LoginHeader";
 
 function SignInPage() {
-    const navigate = useNavigate();
+    const navigateToHomePage = useNavigate();
     const handleClick = () => {
-        navigate('/');
+        navigateToHomePage('/');
     }
     return(
         <>

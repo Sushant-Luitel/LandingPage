@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { menuItems } from "./MenuItemsData";
 import { useNavigate } from "react-router-dom";
 function MenuItems() {
-  const navigate = useNavigate();
+  const navigateToSignInPage = useNavigate();
   const handleClick = () => {
-    navigate('/signin-page');
+    navigateToSignInPage('/signin-page');
   }
   return (
     <>

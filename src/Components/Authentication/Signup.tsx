@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 type FormValues = z.infer<typeof SignupSchema>;
 
 export const Signup = () => {
-  const navigate = useNavigate();
+  const navigateToHomePage = useNavigate();
   const handleClick = () => {
-    navigate('/');
+    navigateToHomePage('/');
   }
   const {
     register,
