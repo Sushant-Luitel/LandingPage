@@ -49,23 +49,27 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <div className="bg-white rounded-md w-full sm:rounded-sm shadow-lg flex flex-col p-4  relative h-full mt-5 md:p-[40px] md:mt-[70px]">
         <div className="flex items-center justify-start gap-4  md:items-start">
           <div className="w-25 h-25 md:w-[120px] md:h-[114px] relative">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="h-full w-full flex-shrink-0  object-cover  hover:cursor-pointer"
-            ></img>
-            <div className="absolute top-1/2 left-1/2 z-2 -translate-1/2 h-[95%] w-[95%] bg-white"></div>
-            <div className="absolute top-1/2 left-1/2 z-3 -translate-1/2 h-[95%] w-[95%]">
+            <a href={post.url} target="_blank" rel="noopener noreferrer">
               <img
                 src={post.image}
                 alt={post.title}
-                className="h-full w-full z-1 flex-shrink-0  object-cover  hover:cursor-pointer hover:-translate-x-1.5 hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+                className="h-full w-full flex-shrink-0  object-cover  hover:cursor-pointer"
               ></img>
-            </div>
+              <div className="absolute top-1/2 left-1/2 z-2 -translate-1/2 h-[95%] w-[95%] bg-white"></div>
+              <div className="absolute top-1/2 left-1/2 z-3 -translate-1/2 h-[95%] w-[95%]">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="h-full w-full z-1 flex-shrink-0  object-cover  hover:cursor-pointer hover:-translate-x-1.5 hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+                ></img>
+              </div>
+            </a>
           </div>
           <div className="flex justify-start items-start flex-col flex-grow md:ml-2 md:p-2">
             <h2 className=" inline justify-start items-center text-base font-bold font-josefin md:text-2xl justify-start text-left md:pb-2 hover:cursor-pointer hover:underline decoration-blue-500 decoration-3 underline-offset-6 underline-eaese-in-out duration-900">
-              {post.title}
+              <a href={post.url} target="_blank" rel="noopener noreferrer">
+                {post.title}
+              </a>
             </h2>
             <div className=" items-center justify-center mb-4 items-baseline hidden md:flex">
               <span className="text-xs text-gray-500 font-source-serif md:text-md">
@@ -132,13 +136,15 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
             </span>
           </div>
         </div>
-        <div className="mt-auto absolute bottom-[-20px] left-1/2 transform -translate-x-1/2">
-          <div className="relative inline-block group">
-            <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a]"></span>
-            <button className="relative bg-[#47446a] w-max text-white px-8 py-3 text-sm md:text-lg transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2">
-              Continue Reading
-            </button>
-          </div>
+        <div className="mt-auto absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 ">
+          <a href={post.url} target="_blank" rel="noopener noreferrer">
+            <div className="relative inline-block group ">
+              <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a] "></span>
+              <button className="relative bg-[#47446a] w-max text-white px-8 py-3 text-sm md:text-lg transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:cursor-pointer">
+                Continue Reading
+              </button>
+            </div>
+          </a>
         </div>
       </div>
     </div>
