@@ -8,9 +8,9 @@ import EstudioPatagon from "./EstudioPatagon";
 import { useNavigate } from "react-router-dom";
 function NavBar() {
   const [open, setOpen] = useState(false);
-  const navigateToSearchPage = useNavigate();
-  const handleClick = () => {
-    navigateToSearchPage('/search');
+  const navigate = useNavigate();
+  const navigateToSearchPage = () => {
+    navigate('/search');
   }
 
   return (
@@ -29,7 +29,7 @@ function NavBar() {
           <br className="sm:hidden" /> for Ghost
         </div>
 
-        <div onClick={handleClick} className="rounded-full w-10 h-10 bg-red-600 p-2.5 xl:w-11 xl:h-11 cursor-pointer flex justify-center items-center ">
+        <div onClick={navigateToSearchPage} className="rounded-full w-10 h-10 bg-red-600 p-2.5 xl:w-11 xl:h-11 cursor-pointer flex justify-center items-center ">
           <GoSearch className="w-[17px] h-[17px] text-white " />
         </div>
       </div>

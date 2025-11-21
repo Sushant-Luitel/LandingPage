@@ -4,13 +4,13 @@ import { RxCross2 } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 
 function Search() {
-  const navigateToHomePage = useNavigate();
-  const handleClick = () => {
-    navigateToHomePage("/");
+  const navigate = useNavigate();
+  const navigateToHomePage = () => {
+    navigate("/");
   }
   return (
     <div className=" ">
-      <button className="fixed top-0 right-0 text-[#4B4870]  p-2 " onClick={handleClick}>
+      <button className="fixed top-0 right-0 text-[#4B4870]  p-2 " onClick={navigateToHomePage}>
         <RxCross2 className="text-[32px]" />
       </button>
 

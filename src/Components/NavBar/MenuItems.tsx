@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { menuItems } from "./MenuItemsData";
 import { useNavigate } from "react-router-dom";
 function MenuItems() {
-  const navigateToSignInPage = useNavigate();
-  const handleClick = () => {
-    navigateToSignInPage('/signin-page');
+  const navigate = useNavigate();
+  const navigateToSignInPage = () => {
+    navigate('/signin-page');
   }
   return (
     <>
@@ -25,7 +25,7 @@ function MenuItems() {
         ))}
         <div className="text-center">
           <button className="mt-6 w-[120px] py-2 px-[25px] bg-[#4B4870] text-[15px] text-white font-josefin lg:mt-0 "
-                  onClick={handleClick}
+                  onClick={navigateToSignInPage}
           >
             Sign In
           </button>
