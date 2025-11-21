@@ -6,6 +6,7 @@ import SignInPage from "./pages/signin-page";
 import Search from "./components/NavBar/SearchButton";
 import { Signup } from "./components/Authentication/Signup";
 import Layout from "./components/Outlet/Outlet";
+import CustomizingBrandPage from "./pages/customizingbrand-page";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/Membership" element={<Membership />} />
+          <Route path="/CustomizingBrand" element={<CustomizingBrandPage/>} />
         </Route>
 
         <Route path="/signin-page" element={<SignInPage />} />
