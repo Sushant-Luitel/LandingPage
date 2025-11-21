@@ -24,7 +24,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Travel", "Health"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    
   },
 
   {
@@ -38,7 +38,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Technology", "Getting Started"],
     author: "Mary Buzard",
     authorimg: "",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -52,7 +52,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Music", "Getting Started", "Technology"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
   {
     image: "lady leaning on a table.jpg",
@@ -65,7 +65,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Travel", "Health"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -79,7 +79,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Health", "Getting Started"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -93,7 +93,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Getting Started"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -107,7 +107,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Getting Started"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
   {
     image: "woman-painting.jpg",
@@ -120,7 +120,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Health", "Music"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -134,7 +134,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Travel"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
   {
     image: "A.png",
@@ -147,7 +147,7 @@ export const HomeContent: BlogPost[] = [
     tags: ["Getting Started"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -162,7 +162,7 @@ export const HomeContent: BlogPost[] = [
     comments: 1,
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 
   {
@@ -176,6 +176,6 @@ export const HomeContent: BlogPost[] = [
     tags: ["Technology", "Getting Started"],
     author: "Jonathan Doe",
     authorimg: "profile.png",
-    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
+    url: "http://localhost:5173/CustomizingBrand",
   },
 ];
