@@ -8,18 +8,17 @@ function Footer() {
     <>
       <div className=" w-full flex flex-col items-center px-[25px] py-[35px]">
         <div className="w-full ">
-          <div className="text-[26px] mb-[15px] text-[#4B4870] text-center font-bold">
-            Subscribe to <br className="sm:hidden" />{" "}
+          <div className="text-[26px] mb-[15px] text-[#4B4870] text-center font-bold md:text-[38px]">
+            Subscribe to <br className="sm:hidden" />
             <span className="text-red-700">M</span>aktub for Ghost
           </div>
-          <div className="w-full text-[#596172] text-[14px] font-serif text-center ">
+          <div className="w-full text-[#596172] text-[14px] font-serif text-center md:text-[16px]">
             Get the latest posts delivered right to your
             <br className="sm:hidden" /> email.
           </div>
           <div className=" w-full mt-[25px] mb-[15px] flex flex-col gap-5 items-center md:flex-row justify-center md:gap-0">
-            <div className="w-full bg-[#F9F9FE] px-[25px] py-3 shadow-md text-center text-[16px] text-[#596172] md:w-[260px]">
-              Enter your email address
-            </div>
+            <input type="email" placeholder="Enter your email address" className="w-full bg-[#F9F9FE] px-[25px] py-3 shadow-md  text-[16px] text-[#596172] md:w-[260px] outline-none" />
+              
             <div className="relative inline-block group">
               <span className="absolute top-0 left-0 w-full h-full border-2 border-[#47446a]"></span>
               <button className="relative bg-[#47446a] text-white px-8 py-3 text-lg transition-all duration-300 hover:-top-1.5 hover:-left-1.5">
