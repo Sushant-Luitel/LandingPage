@@ -8,8 +8,8 @@ type FormValues = z.infer<typeof SignupSchema>;
 export const Signup = () => {
   const navigate = useNavigate();
   const navigateToHomePage = () => {
-    navigate('/');
-  }
+    navigate("/");
+  };
   const {
     register,
     handleSubmit,
@@ -24,105 +24,113 @@ export const Signup = () => {
         "! You have successfully signed up."
     );
   };
-  
+
   return (
-    <div className="md:w-[600px] flex flex-col gap-[30px] justify-center  md:gap-[50px] py-7 px-5 mr-auto ml-auto ">
-      <div onClick={navigateToHomePage} className="w-[120px] text-[12px]  font-sans text-[#454360] md:text-[15px] font-semibold text-start hover:underline underline-offset-2 decoration-blue-400 decoration-2">
-        Go back to home
-      </div>
-      <div className=" xl:w[600px] p-5 shadow-2xl flex rounded-lg mr-auto ml-auto">
-        <div className="shadow-md max-w-4xl p-3 flex flex-col justify-center items-center md:p-8 gap-4">
-          <div className="text-center font-josefin text-2xl md:text-4xl text-[#454360] font-bold lg:text-5xl">
-            Subscribe to
-            <br />
-            <span className="text-red-700">M</span>aktub for Ghost
+    <div className="w-full p-5">
+      <div className="max-w-md mx-auto flex flex-col gap-5">
+        <div
+          onClick={navigateToHomePage}
+          className="w-fit text-[12px] font-sans text-[#454360] md:text-[15px] font-semibold hover:underline underline-offset-2 decoration-blue-400 decoration-2 cursor-pointer"
+        >
+          Go back to home
+        </div>
+
+        <div className="shadow-lg p-7 rounded-lg bg-white">
+          <div className="text-center font-josefin text-2xl text-[#454360] font-bold mb-2">
+            Subscribe to <span className="text-red-700">M</span>aktub
           </div>
-          <div className="text-center font-source-serif text-sm text-gray-500 mt-4 md:text-xl">
+          <div className="text-center font-source-serif text-sm text-gray-500 mb-6">
             A super modern theme following the latest trends with premium
             Membership and fully compatible with Ghost.
           </div>
 
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="flex justify-center items-center flex-col"
-          >
-            <div className="gap-5 flex flex-col mt-6 md:mt-10 lg:w-full justify-center items-center font-source-serif md:flex-col">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="flex flex-col justify-center w-full rounded">
+              <label className="block text-gray-700 font-medium mb-1">
+                Name
+              </label>
               <input
-                {...register("name")}
-                className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
+                type="text"
                 placeholder="Enter your name"
+                {...register("name")}
+                className="w-full border border-gray-300 rounded-lg p-2 outline-none"
               />
-              {errors.name && (
-                <span className="text-red-500">{errors.name.message}</span>
-              )}
+              <p className="text-red-500 text-sm mb-3 h-4">
+                {errors.name?.message}
+              </p>
 
+              <label className="block text-gray-700 font-medium mb-1">
+                Email
+              </label>
               <input
-                {...register("email")}
-                className="shadow-lg px-5 py-2 w-full lg:max-w-xl focus:outline-none"
+                type="email"
                 placeholder="Enter your email"
+                {...register("email")}
+                className="w-full border border-gray-300 rounded-lg p-2 outline-none"
               />
+              <p className="text-red-500 text-sm mb-3 h-4">
+                {errors.email?.message}
+              </p>
 
-              {errors.email && (
-                <span className="text-red-500">{errors.email.message}</span>
-              )}
-
+              <label className="block text-gray-700 font-medium mb-1">
+                Phone No
+              </label>
               <input
                 type="number"
-                className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
-                placeholder="Phone No:"
+                placeholder="Enter phone number"
                 {...register("phone")}
+                className="w-full border border-gray-300 rounded-lg p-2 outline-none"
               />
-              {errors.phone && (
-                <span className="text-red-500">{errors.phone.message}</span>
-              )}
+              <p className="text-red-500 text-sm mb-3 h-4">
+                {errors.phone?.message}
+              </p>
 
+              <label className="block text-gray-700 font-medium mb-1">
+                Password
+              </label>
               <input
                 type="password"
-                placeholder="Password:"
-                className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
+                placeholder="Create password"
                 {...register("password")}
+                className="w-full border border-gray-300 rounded-lg p-2 outline-none"
               />
-              {errors.password && (
-                <span className="text-red-500">
-                  {errors.password.message || "Please fill out this field"}
-                </span>
-              )}
+              <p className="text-red-500 text-sm mb-3 h-4">
+                {errors.password?.message}
+              </p>
 
+              <label className="block text-gray-700 font-medium mb-1">
+                Confirm Password
+              </label>
               <input
                 type="password"
-                placeholder="Confirm Password:"
-                className="shadow-lg px-5 py-2 md:w-xs lg:w-full lg:max-w-xl focus:outline-none"
+                placeholder="Confirm password"
                 {...register("confirmpassword")}
+                className="w-full border border-gray-300 rounded-lg p-2 outline-none"
               />
-              {errors.confirmpassword && (
-                <span className="text-red-500">
-                  {errors.confirmpassword.message ||
-                    "Please fill out this field"}
-                </span>
-              )}
-            </div>
+              <p className="text-red-500 text-sm mb-5 h-4">
+                {errors.confirmpassword?.message}
+              </p>
 
-            <div className="mt-7">
-              <button
-                disabled={isSubmitting}
-                className={`shadow-lg px-3 py-2 w-auto bg-blue-900 text-white mt-4 ${
-                  isSubmitting ? "cursor-not-allowed opacity-50" : ""
-                }`}
-              >
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </button>
+              <div className="relative inline-block group mt-2">
+                <span className="absolute w-full h-full top-0 left-0 px-[25px] py-2 border-2 border-[#47446a]"></span>
+                <button
+                  disabled={isSubmitting}
+                  className={`relative w-full h-full bg-[#47446a] text-white px-8 py-3 text-lg transition-all duration-300 hover:-top-1.5 hover:-left-1.5 ${
+                    isSubmitting ? "opacity-75 cursor-not-allowed" : ""
+                  }`}
+                >
+                  {isSubmitting ? "Submitting..." : "Sign Up"}
+                </button>
+              </div>
+
+              <div className="text-[13px] text-[#454360] text-center mt-5">
+                Already have an account?{" "}
+                <a href="/signin-page" className="font-bold cursor-pointer">
+                  Sign In
+                </a>
+              </div>
             </div>
           </form>
-
-          <div className="mt-5 font-source-serif text-sm md:text-xl">
-            Already have an account?{" "}
-            <a
-              href="/signin-page"
-              className="font-semibold font-source-serif text-sm md:text-lg"
-            >
-              Sign In
-            </a>
-          </div>
         </div>
       </div>
     </div>
