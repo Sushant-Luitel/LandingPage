@@ -2,6 +2,7 @@ import FollowMe from "../Footer/FollowMe";
 import TagCloud from "../Footer/TagCloud";
 import { FaChevronUp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { scrollToTop } from "../../lib/scrollToTop";
 export const Sidebar = () => {
   const sidebarRef = useRef<HTMLDivElement | null>(null);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -50,7 +51,7 @@ export const Sidebar = () => {
       </aside>
       {showScrollToTop && (
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={scrollToTop}
           className="fixed bottom-5 right-5 z-50 bg-blue-900 h-10 text-white px-4 py-2  shadow-lg text-sm font-semibold transition-opacity duration-300 hidden lg:block "
         >
           <FaChevronUp />
