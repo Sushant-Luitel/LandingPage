@@ -1,17 +1,18 @@
-export interface BlogPost{
-    image:string;
-    title:string;
-    date:string;
-    readingtime:string;
-    content:string;
-    type:string;
-    tags:string[];
-    author:string;
-    comments?:number;
-    authorimg:string;
+export interface BlogPost {
+  image: string;
+  title: string;
+  date: string;
+  readingtime: string;
+  content: string;
+  type: string;
+  tags: string[];
+  author: string;
+  comments?: number;
+  authorimg: string;
+  url?: string;
 }
 
-export const HomeContent:BlogPost[] = [
+export const HomeContent: BlogPost[] = [
   {
     image: "fedora.png",
     title: "Far far away, behind the word mountains",
@@ -22,7 +23,8 @@ export const HomeContent:BlogPost[] = [
     type: "public",
     tags: ["Travel", "Health"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -36,6 +38,7 @@ export const HomeContent:BlogPost[] = [
     tags: ["Technology", "Getting Started"],
     author: "Mary Buzard",
     authorimg: "",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -48,7 +51,8 @@ export const HomeContent:BlogPost[] = [
     type: "public",
     tags: ["Music", "Getting Started", "Technology"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
   {
     image: "lady leaning on a table.jpg",
@@ -60,7 +64,8 @@ export const HomeContent:BlogPost[] = [
     type: "public",
     tags: ["Travel", "Health"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -73,7 +78,8 @@ export const HomeContent:BlogPost[] = [
     type: "paid",
     tags: ["Health", "Getting Started"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -86,7 +92,8 @@ export const HomeContent:BlogPost[] = [
     type: "member",
     tags: ["Getting Started"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -99,7 +106,8 @@ export const HomeContent:BlogPost[] = [
     type: "public",
     tags: ["Getting Started"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
   {
     image: "woman-painting.jpg",
@@ -111,7 +119,8 @@ export const HomeContent:BlogPost[] = [
     type: "public",
     tags: ["Health", "Music"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -124,7 +133,8 @@ export const HomeContent:BlogPost[] = [
     type: "public",
     tags: ["Travel"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
   {
     image: "A.png",
@@ -136,7 +146,8 @@ export const HomeContent:BlogPost[] = [
     type: "member",
     tags: ["Getting Started"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 
   {
@@ -147,12 +158,12 @@ export const HomeContent:BlogPost[] = [
     content:
       "Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be adapted for most purposes. However, Ghost can also be completely themed...",
     type: "member",
-    tags: ["Lifestyle","Music"],
-    comments:1,
+    tags: ["Lifestyle", "Music"],
+    comments: 1,
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
-
 
   {
     image: "M.png",
@@ -162,9 +173,9 @@ export const HomeContent:BlogPost[] = [
     content:
       "There are a couple of things to do next while you're getting set up: Make your site private If you've got a publication that you don't want the world to see yet because...",
     type: "member",
-    tags: ["Technology","Getting Started"],
+    tags: ["Technology", "Getting Started"],
     author: "Jonathan Doe",
-    authorimg: "",
+    authorimg: "profile.png",
+    url: "https://preview.themeforest.net/item/maktub-minimal-lightweight-blog-for-ghost/full_screen_preview/38190855",
   },
 ];
-
