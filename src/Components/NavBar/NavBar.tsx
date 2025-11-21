@@ -15,13 +15,7 @@ function NavBar() {
 
   return (
     <>
-      <div className="sticky top-0 bg-black w-full h-[54px] p-2 flex justify-between items-center z-20">
-        <img src="logo.svg" alt="logo" className="w-[114px] h-3.5" />
-        <button className="px-4.5 text-white bg-[#82B440] text-[14px] font-serif rounded-1">
-          Buy now
-        </button>
-      </div>
-
+      <div className="pt-[70px]">
       <div className="flex justify-between p-[15px] mt-3 items-center lg:justify-evenly lg:gap-8">
         <RiMenu2Fill
           className="lg:hidden w-[31px] h-[31px] text-[#4B4870] cursor-pointer"
@@ -63,6 +57,7 @@ function NavBar() {
       </div>
 
       <EstudioPatagon />
+      </div>
     </>
   );
 }

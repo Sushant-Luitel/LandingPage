@@ -11,7 +11,7 @@ function MenuItems() {
     <>
       <div
         className="flex flex-col gap-5 p-6 text-[#4B4870] text-[15px] font-bold
-       lg:flex-row lg:gap-5  lg:items-center lg:shadow-sm lg:max-w-[582px] lg:p-0 
+       lg:flex-row lg:gap-5  lg:items-center lg:shadow-sm lg:max-w-[582px] lg:p-0 lg:px-3.5
        lg:py-2.5  lg:font-semibold lg:justify-center "
       >
         {menuItems.map((item) => (
