@@ -19,7 +19,7 @@ function Subscriber() {
         <div className="text-[13px]  text-[#596172] md:text-[14px] lg:text-[17px]">
           Already have an account?
           <span
-            className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px] "
+            className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px] cursor-pointer ml-3"
             onClick={navigateToSignInPage}
           >
             Sign In

@@ -31,7 +31,7 @@ function LoginComponent() {
               </label>
               <input
                 type="text"
-                placeholder="Enter name"
+                placeholder="Enter username"
                 {...register("name")}
                 className="w-full border border-gray-300 rounded-lg p-2  outline-none "
               />
@@ -42,7 +42,7 @@ function LoginComponent() {
               </label>
               <input
                 type="password"
-                placeholder="Enter name"
+                placeholder="Enter password"
                 {...register("password")}
                 className="w-full border border-gray-300 rounded-lg p-2  outline-none "
               />
@@ -57,7 +57,7 @@ function LoginComponent() {
 
               <div className="text-[13px] text-[#454360] text-center mt-5">
                 Don't have an account?{" "}
-                <span className="font-bold" onClick={navigateToSignInPage}>
+                <span className="font-bold cursor-pointer" onClick={navigateToSignInPage} >
                   Sign Up
                 </span>
               </div>

@@ -8,12 +8,12 @@ function CustomizingBrandPage() {
     <>
       <div className="w-full flex flex-col justify-center md:flex-row md:gap-8 mx-auto mt-10 px-4 md:px-0">
         
-          <div className="w-full max-w-3xl  flex flex-col gap-3.5 justify-center items-center showdow-md p-5 md:p-12">
+          <div className="w-full max-w-3xl  flex flex-col gap-3.5 justify-center items-center showdow-md p-5 mt-14 md:p-12">
             <div className="w-full object-cover">
               <img
                 src="tree.jpg"
                 alt="image1"
-                className="w-full h-[200px] shrink-0  object-cover  hover:cursor-pointer"
+                className="w-full h-[250px] shrink-0  object-cover  hover:cursor-pointer"
               ></img>
             </div>
             <div className="flex flex-col gap-5 mb-5">
