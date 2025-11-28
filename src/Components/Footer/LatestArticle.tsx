@@ -28,7 +28,7 @@ function LatestArticle() {
               </div>
 
               <div className="flex flex-col">
-                <div className="text-[12px] text-[#454360] md:text-[13px] font-josefin font-semibold ">
+                <div className="text-[12px] text-[#454360] md:text-[13px] font-josefin font-semibold cursor-pointer hover:underline decoration-blue-500 decoration-2 underline-offset-4 underline-eaese-in-out duration-900">
                   {article.heading}
                 </div>
                 <div className="text-[12px]">{article.date}</div>

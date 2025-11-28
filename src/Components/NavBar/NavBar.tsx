@@ -35,7 +35,7 @@ function NavBar() {
       </div>
 
       <div
-        className={`fixed top-[54px] left-0 h-full w-[300px] bg-white shadow-2xl transition-transform duration-300 height-full p-5 pt-10 z-99999 
+        className={`fixed top-0left-0 h-full w-[300px] bg-gray-200 shadow-2xl transition-transform duration-300 height-full p-5 pt-10 z-99999 overflow-hidden
         ${open ? "translate-x-0" : "-translate-x-full"} `}
       >
         <div className="lg:hidden  ">
@@ -46,7 +46,7 @@ function NavBar() {
       {open && (
         <button
           onClick={() => setOpen(false)}
-          className="fixed top-[90px] left-[310px] text-[#4B4870]  p-2 "
+          className="fixed top-0 left-[310px] text-[#4B4870]  p-2 overflow-hidden z-99999 "
         >
           <RxCross2 className="text-[32px]" />
         </button>

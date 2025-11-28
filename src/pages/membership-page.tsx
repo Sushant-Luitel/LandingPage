@@ -8,6 +8,9 @@ function Membership() {
   const navigateToSignInPage = () => {
     navigate('/signin-page');
   } 
+  const navigateToSignUpPage = () => {
+    navigate('/signup');
+  } 
   return (
     <>
       <div className="flex flex-col gap-[50px] px-5 items-center mt-6">
@@ -65,6 +68,7 @@ function Membership() {
                 className={`py-2.5 px-[25px] text-[12px] font-semibold  ${
                   index === 0 ? "bg-red-500" : "bg-[#4B4870] hover:bg-[#3d3a5c]"
                 } text-white`}
+                onClick={navigateToSignUpPage}
               >
                 {membership.button}
               </button>
@@ -72,9 +76,9 @@ function Membership() {
           ))}
         </div>
         <div className="text-[13px]  text-[#596172] md:text-[14px] lg:text-[17px]">
-          Already have an account?
-          <span className="text-[13px] lg:text-[17px] text-[#596172] font-bold md:text-[14px]" onClick={navigateToSignInPage}>
-            Sign In
+          Already have an account? 
+          <span className="text-[13px] ml-3 cursor-pointer lg:text-[17px] text-[#596172] font-bold md:text-[14px]" onClick={navigateToSignInPage}>
+           Sign In
           </span>
         </div>
       </div>
